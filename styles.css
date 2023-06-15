@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* primary color */
+  --tomato: hsl(4, 100%, 67%);
+
+  /* secondary color */
+
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: var(--charcoal-grey);
+}
+
+/* MOBILE MEDIA QUERY */
+@media screen and (min-width: 325px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 100%;
+  }
+
+  .container {
+    margin: 47px 0;
+    padding: 0 30px;
+    font-weight: 400;
+  }
+
+  #emailValue {
+    color: var(--tomato);
+  }
+
+  .cta {
+    margin: 15px 0;
+  }
+
+  .cta h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 25px 0 15px;
+  }
+
+  .cta-details {
+    margin: 25px 0;
+  }
+
+  .cta-details div {
+    display: flex;
+    margin: 10px 0;
+    line-height: 1.5em;
+    gap: 20px;
+  }
+
+  .cta-details div img {
+    align-self: flex-start;
+  }
+
+  .cta-action .message-details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta-action div input[type="text"] {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .cta-action button {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto 20px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    background-color: var(--dark-slate-grey);
+  }
+
+  .cta-action button:active {
+    background-color: var(--tomato);
+  }
+
+  .cta-action button:hover {
+    cursor: pointer;
+  }
+  /* Begining of styling of the success message display */
+  .success-message {
+    display: none;
+    padding: 1.5em;
+  }
+
+  .success-message img {
+    margin: 125px auto 30px;
+  }
+
+  .success-message h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0 0 20px;
+  }
+
+  .success-message p {
+    line-height: 1.5em;
+  }
+
+  .success-message button {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 110px;
+    color: white;
+    font-weight: 700;
+    background-color: var(--dark-slate-grey);
+  }
+
+  .success-message button:active {
+    background-color: var(--tomato);
+  }
+
+  .success-message button:hover {
+    cursor: pointer;
+  }
+
+  /* End of styling of the success message display */
+
+  /* Attribution styling */
+  .attribution {
+    color: var(--charcoal-grey);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+  }
+  .attribution a {
+    color: var(--tomato);
+  }
+  /* End of attribution styling */
+}
+
+/* DESKTOP MEDIA QUERY */
+@media screen and (min-width: 768px) {
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+  }
+
+  body {
+    background-color: var(--charcoal-grey);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .parent {
+    display: flex;
+    align-self: center;
+    padding: 20px 30px;
+    background-color: var(--white);
+    border-radius: 20px;
+    max-height: 700px;
+  }
+
+  .container {
+    align-self: center;
+    width: 100%;
+    margin: 47px 0;
+    padding: 0 60px 0 0;
+    font-weight: 400;
+  }
+
+  .cta {
+    padding: 0 10px;
+  }
+
+  .cta h3 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 20px 0 35px;
+  }
+
+  .cta-action label {
+    font-weight: 900;
+    font-size: 0.75em;
+  }
+
+  /* Begining of styling of the success message display */
+  .success-message {
+    width: 100vw;
+    height: 100vh;
+    margin: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-message-details {
+    background-color: var(--white);
+    padding: 2.5em;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  .success-message img {
+    margin: 30px auto;
+  }
+
+  .success-message h3 {
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0 0 20px;
+  }
+
+  .success-message p {
+    line-height: 1.5em;
+  }
+
+  .success-message button {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 5em;
+    color: white;
+    font-weight: 700;
+    background-color: var(--dark-slate-grey);
+  }
+  /* End of styling of the success message display */
+
+  /* Attribution styling */
+  .attribution {
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+  }
+  .attribution a {
+    color: var(--tomato);
+  }
+  /* End of attribution styling */
+}
